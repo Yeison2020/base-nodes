@@ -4,7 +4,8 @@
   "description": "Table to multiply for learning use",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "node app --base=3"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Yeison2020/base-nodes/issues"
   },
-  "homepage": "https://github.com/Yeison2020/base-nodes#readme"
+  "homepage": "https://github.com/Yeison2020/base-nodes#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
