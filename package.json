@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Yeison2020/base-nodes#readme",
   "dependencies": {
-    "colors": "^1.0.0"
+    "colors": "^1.0.0",
+    "yargs": "^17.3.1"
   }
 }
