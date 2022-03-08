@@ -1,17 +1,21 @@
 const fs = require("fs");
+// Here I'm converting my regular function to return a promise and a better way to catch the error
+const createFile = async (base = 5) => {
+  try {
+    let salida = "";
+    console.log("Table create here", base);
+    while (base <= 10) {
+      salida += `5 x ${base} = ${5 * base} \n `;
+      console.log(salida);
+      base += 1;
+    }
 
-const createFile = (base = 5) => {
-  let salida = "";
-  console.log("Table create here", base);
-  while (base <= 10) {
-    salida += `5 x ${base} = ${5 * base} \n `;
-    console.log(salida);
-    base += 1;
+    fs.writeFileSync(`table-${base}.txt`, salida);
+
+    return `table-${base} created `;
+  } catch (error) {
+    console.log(error);
   }
-
-  fs.writeFileSync(`table-${base}.txt`, salida);
-
-  console.log(`table-${base} created `);
 };
 
 module.exports = {
