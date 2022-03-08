@@ -9,7 +9,7 @@ while (base <= 15) {
   base += 1;
 }
 
-fs.writeFile("table-5.txt", salida, (err) => {
+fs.writeFile(`table-${base}.txt`, salida, (err) => {
   if (err) throw err;
-  console.log("Table-5 created here");
+  console.log(`Table-${base} created here`);
 });
