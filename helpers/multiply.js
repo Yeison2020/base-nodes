@@ -1,7 +1,10 @@
 const fs = require("fs");
 // Here I'm converting my regular function to return a promise and a better way to catch the error
-const createFile = async (base = 5) => {
+const createFile = async (base = 5, listar = false) => {
   try {
+    if (listar) {
+      console.log("=================Printing=====================");
+    }
     let salida = "";
     console.log("Table create here", base);
     while (base <= 10) {

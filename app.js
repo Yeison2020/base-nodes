@@ -28,7 +28,7 @@ console.log(process.argv);
 console.log(argv);
 console.log("base: yargs", argv.base);
 
-createFile(argv.base)
+createFile(argv.base, argv.listar)
   .then((nameFile) => console.log(nameFile, "created"))
   .catch((err) => {
     console.log(err);
