@@ -1,0 +1,19 @@
+{
+  "name": "base-02",
+  "version": "0.0.1",
+  "description": "Table to multiply for learning use",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeison2020/base-nodes.git"
+  },
+  "author": "Yeison Casado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yeison2020/base-nodes/issues"
+  },
+  "homepage": "https://github.com/Yeison2020/base-nodes#readme"
+}
